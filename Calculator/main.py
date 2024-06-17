@@ -21,11 +21,11 @@ def on_equals():
 def on_clear():
     global equation_str
     equation_str = ""
-    equation_var.set("")  # Clear the display
+    equation_var.set("") 
 
 window = Tk()
 window.title("CodexCue Calculator")
-window.geometry("400x600")  # Adjusted window size to fit all buttons
+window.geometry("400x600")  
 
 equation_str = ""
 equation_var = StringVar()
