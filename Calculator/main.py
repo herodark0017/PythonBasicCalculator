@@ -20,12 +20,12 @@ def on_equals():
 
 def on_clear():
     global equation_str
-    equation_var.set("")
     equation_str = ""
+    equation_var.set("")  # Clear the display
 
 window = Tk()
-window.title("Basic Arithmetic Calculator")
-window.geometry("500x500")
+window.title("CodexCue Calculator")
+window.geometry("400x600")  # Adjusted window size to fit all buttons
 
 equation_str = ""
 equation_var = StringVar()
@@ -66,7 +66,7 @@ button_positions = [
 for i, button in enumerate(buttons):
     button.grid(row=button_positions[i][0], column=button_positions[i][1])
 
-clear_button = Button(window, text='Clear', height=4, width=12, font=35, command=on_clear)
-clear_button.pack()
+clear_button = Button(window, text='Clear Screen', height=4, width=12, font=35, command=on_clear)
+clear_button.pack(pady=10)
 
 window.mainloop()
