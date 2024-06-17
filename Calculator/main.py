@@ -24,7 +24,7 @@ def on_clear():
     equation_str = ""
 
 window = Tk()
-window.title("Simple Calculator")
+window.title("Basic Arithmetic Calculator")
 window.geometry("500x500")
 
 equation_str = ""
